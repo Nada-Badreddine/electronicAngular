@@ -6,9 +6,24 @@ import { CartComponent } from './components/cart/cart.component';
 import { InputUserDataFormComponent } from './input-user-data-form/input-user-data-form.component';
 import { DisplayUserDataComponent } from './display-user-data/display-user-data.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { UserListComponent } from './user-list-component/user-list-component.component';
+
+
 const routes: Routes = [
   {
     path: '', component: HomeComponent
+  },
+  {
+    path: 'users', component: UserListComponent
+  },
+
+ 
+
+ 
+
+  {
+    path: 'users', component: ProductComponent
+
   },
   {
     path: 'product/:id', component: ProductComponent

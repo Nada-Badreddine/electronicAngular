@@ -18,6 +18,9 @@ import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-b
 import {ToastrModule} from 'ngx-toastr';
 import { InputUserDataFormComponent } from './input-user-data-form/input-user-data-form.component';
 import { DisplayUserDataComponent } from './display-user-data/display-user-data.component';
+import { UserListComponent } from './user-list-component/user-list-component.component';
+import { UserService } from './services/UserService';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +34,8 @@ import { DisplayUserDataComponent } from './display-user-data/display-user-data.
     ProductComponent,
     InputUserDataFormComponent,
     DisplayUserDataComponent
+    
+  
     
   ],
   imports: [
@@ -46,7 +51,9 @@ import { DisplayUserDataComponent } from './display-user-data/display-user-data.
     ToastrModule.forRoot()
 
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
